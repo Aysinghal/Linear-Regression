@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 
-def quadratic_regression(x_data, y_data, learning=0.001, reps=10000):
+def quadratic_regression(x_data, y_data, learning=0.001, reps=1000000):
     a = 0
     b = 0
     c = 0
@@ -35,7 +35,7 @@ def step_size(x_data, y_data, learning, a, b, c):
 
 
 x_data = [-3, -2, -1, 0, 1, 2, 3]
-y_data = [11, 6, 3, 1, 3, 6, 11]
+y_data = [18, 8, 2, 0, 2, 8.7, 18]
 
 values = quadratic_regression(x_data, y_data)
 
